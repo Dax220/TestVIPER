@@ -13,6 +13,7 @@ class EntitiesViewController: UIViewController, EntitiesPresenterOutput, UITable
     @IBOutlet var tableView: UITableView!
     
     var presenter: EntitiesPresenterInput!
+    
     var entities: [Entity]?
     
     override func viewDidLoad() {

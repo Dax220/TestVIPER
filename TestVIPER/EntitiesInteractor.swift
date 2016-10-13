@@ -10,7 +10,7 @@ import UIKit
 
 class EntitiesInteractor: NSObject, EntitiesInteractorInput {
     
-    var output: EntitiesInteractorOutput!
+    var presenter: EntitiesInteractorOutput!
     
     internal func fetchFakeEntities() {
         
@@ -23,7 +23,7 @@ class EntitiesInteractor: NSObject, EntitiesInteractorInput {
             entities.append(entity)
         }
         
-        output.fakeEntitiesReceived(fakeEntities: entities)
+        presenter.fakeEntitiesReceived(fakeEntities: entities)
     }
     
 }

@@ -20,7 +20,7 @@ class EntitiesRouter: MainRouter, EntitiesRouterInput {
         presenter.view = view
         
         presenter.interactor = interactor
-        interactor.output = presenter
+        interactor.presenter = presenter
         
         presenter.router = self
 
