@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EntityDetails" customModule="TestVIPER" customModuleProvider="target">
+            <connections>
+                <outlet property="entityDescription" destination="u5L-AH-nMS" id="2uz-lW-0q7"/>
+                <outlet property="entityTitle" destination="yfG-Vd-nGm" id="IYd-r9-fBy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfG-Vd-nGm">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="KPB-Hj-xZ5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5L-AH-nMS">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yfG-Vd-nGm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8fy-j3-dzZ"/>
+                <constraint firstItem="u5L-AH-nMS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DsD-6B-Xvw"/>
+                <constraint firstAttribute="bottom" secondItem="u5L-AH-nMS" secondAttribute="bottom" id="Qqu-PE-WPw"/>
+                <constraint firstAttribute="trailing" secondItem="yfG-Vd-nGm" secondAttribute="trailing" id="Vyp-fv-vhu"/>
+                <constraint firstItem="u5L-AH-nMS" firstAttribute="top" secondItem="yfG-Vd-nGm" secondAttribute="bottom" constant="65" id="hif-zk-qHP"/>
+                <constraint firstAttribute="trailing" secondItem="u5L-AH-nMS" secondAttribute="trailing" id="m6S-Sh-CNv"/>
+                <constraint firstItem="yfG-Vd-nGm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="56" id="wqs-Qx-NCk"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
