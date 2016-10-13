@@ -10,4 +10,5 @@ import UIKit
 
 protocol EntitiesPresenterInput {
     func showFakeEntities()
+    func showEntityDetails(entity: Entity)
 }

@@ -12,7 +12,7 @@ class EntitiesViewController: UIViewController, EntitiesPresenterOutput, UITable
 
     @IBOutlet var tableView: UITableView!
     
-    var presenter: EntitiesPresenter!
+    var presenter: EntitiesPresenterInput!
     var entities: [Entity]?
     
     override func viewDidLoad() {
@@ -41,7 +41,7 @@ class EntitiesViewController: UIViewController, EntitiesPresenterOutput, UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.router.presentEntityDetails(entity: entities![indexPath.row])
+        presenter.showEntityDetails(entity: entities![indexPath.row])
     }
 }
 

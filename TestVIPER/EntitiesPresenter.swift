@@ -18,11 +18,16 @@ class EntitiesPresenter: NSObject, EntitiesInteractorOutput , EntitiesPresenterI
         interactor = EntitiesInteractor()
     }
     
+    //MARK: - EntitiesPresenterInput
     func showFakeEntities() {
         interactor.fetchFakeEntities()
     }
     
-    //MARK: - Interactor output
+    func showEntityDetails(entity: Entity) {
+        router.presentEntityDetails(entity: entity)
+    }
+    
+    //MARK: - EntitiesInteractorOutput
     func fakeEntitiesReceived(fakeEntities: [Entity]) {
         view.displayEntities(entities: fakeEntities)
     }
