@@ -8,6 +8,6 @@
 
 import UIKit
 
-class EntityDetailsRouterInput: NSObject {
-
+protocol EntityDetailsRouterInput {
+    func showEntityDetails(entity: Entity)
 }

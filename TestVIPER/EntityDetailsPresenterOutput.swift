@@ -8,6 +8,6 @@
 
 import UIKit
 
-class EntityDetailsPresenterOutput: NSObject {
-
+protocol EntityDetailsPresenterOutput {
+    func updateView(entity : Entity)
 }

@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol PresenterOutput {
+protocol EntitiesPresenterOutput {
     func displayEntities(entities: [Entity])
 }

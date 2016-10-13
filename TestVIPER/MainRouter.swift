@@ -9,5 +9,5 @@
 import UIKit
 
 class MainRouter: NSObject {
-
+    var navigationController: UINavigationController!
 }

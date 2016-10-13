@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol PresenterInput {
+protocol EntitiesPresenterInput {
     func showFakeEntities()
 }

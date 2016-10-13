@@ -9,5 +9,6 @@
 import UIKit
 
 class Entity: NSObject {
-
+    var entityTitle: String!
+    var entityDescription: String!
 }

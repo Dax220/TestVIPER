@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol InteractorOutput {
+protocol EntitiesInteractorOutput {
     func fakeEntitiesReceived(fakeEntities: [Entity])
 }

@@ -8,6 +8,13 @@
 
 import UIKit
 
-class EntityDetailsPresenter: NSObject {
-
+class EntityDetailsPresenter: NSObject, EntityDetailsPresenterInput {
+    
+    var router: EntityDetailsRouterInput!
+    var entity: Entity!
+    var view: EntityDetailsPresenterOutput!
+    
+    func showEntityDetails() {
+        view.updateView(entity: self.entity)
+    }
 }

@@ -8,6 +8,6 @@
 
 import UIKit
 
-class EntityDetailsPresenterInput: NSObject {
-
+protocol EntityDetailsPresenterInput {
+    func showEntityDetails()
 }

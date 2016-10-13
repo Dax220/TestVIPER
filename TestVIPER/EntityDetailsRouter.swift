@@ -8,6 +8,17 @@
 
 import UIKit
 
-class EntityDetailsRouter: NSObject {
-
+class EntityDetailsRouter: MainRouter, EntityDetailsRouterInput {
+    
+    func showEntityDetails(entity: Entity) {
+        
+        let view = EntityDetailsVC(nibName:"EntityDetailsVC", bundle: nil)
+        let presenter = EntityDetailsPresenter()
+        
+        presenter.entity = entity
+        presenter.view = view
+        view.presenter = presenter
+        
+        self.navigationController.pushViewController(view, animated: true)
+    }
 }

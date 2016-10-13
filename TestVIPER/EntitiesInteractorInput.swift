@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol InteractorInput {
+protocol EntitiesInteractorInput {
     func fetchFakeEntities()
 }

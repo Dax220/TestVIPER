@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Router: MainRouter, RouterInput {
+class EntitiesRouter: MainRouter, EntitiesRouterInput {
     
     func presentInitialVC() {
         

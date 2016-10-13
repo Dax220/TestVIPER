@@ -8,11 +8,11 @@
 
 import UIKit
 
-class Presenter: NSObject, EntitiesInteractorOutput , PresenterInput {
+class EntitiesPresenter: NSObject, EntitiesInteractorOutput , EntitiesPresenterInput {
 
-    var view: PresenterOutput!
+    var view: EntitiesPresenterOutput!
     var interactor: EntitiesInteractorInput!
-    var router: RouterInput!
+    var router: EntitiesRouterInput!
 
     override init() {
         interactor = EntitiesInteractor()
